@@ -1,3 +1,23 @@
+// Package hey is a small net/http package for Go.
+// That uses the built-in context package.
+//
+// hey requires Go 1.7 or newer.
+//
+// Example:
+//  package main
+//
+//  import (
+//  	"net/http"
+//
+//  	"github.com/whaangbuu/hey"
+//  )
+//
+//  func main() {
+//   r := hey.NewRouter()
+//	 r.HandleFunc("GET", "/users/:id", userHandler)
+//	 r.HandleFunc("POST", "/user/create", userCreateHandler)
+//	 log.Fatalln(http.ListenAndServe(":3000", r))
+//  }
 package hey
 
 import (
